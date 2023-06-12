@@ -1,21 +1,29 @@
 # Python Project
 
 from lib.interface import *
+from lib.arquivo import *
 from time import sleep
 
-# Variáveis
-listaPessoas = []
+arq = "cursoemvideo.txt"
+
+if not arquivoExiste(arq):
+    criarArquivo(arq)
 
 # Laço de repetição
 while True:
-    resposta = menu(["Ver pessoas cadastradas", "Cadastrar nova pessoa", "Sair do sistema"])
+    resposta = menu(["Cadastrar nova pessoa", "Ver pessoas cadastradas no sistema", "Ver pessoas cadastradas no arquivo", "Sair do sistema"])
     
     if resposta == 1:
-        listar()
+        cadastrar()
         sleep(2)
     elif resposta == 2:
-        cadastrar()
+        listar()
+        sleep(2)
+        
     elif resposta == 3:
+        lerArquivo(arq)
+        sleep(2)
+    elif resposta == 4:
         entreLinhas(f"Programa finalizado, volte sempre!")
         break
     else: 
