@@ -1,5 +1,2 @@
-Gustavo;41
-Ana;22
-Pedro;35
-Paulo;95
-Jose;11
+Jose;35
+Taiso;19

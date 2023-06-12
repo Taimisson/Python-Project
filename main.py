@@ -11,19 +11,25 @@ if not arquivoExiste(arq):
 
 # Laço de repetição
 while True:
-    resposta = menu(["Cadastrar nova pessoa", "Ver pessoas cadastradas no sistema", "Ver pessoas cadastradas no arquivo", "Sair do sistema"])
+    resposta = menu(["Cadastrar pessoa no sistema", "Cadastrar pessoa no arquivo","Ver pessoas cadastradas no sistema", "Ver pessoas cadastradas no arquivo", "Sair do sistema"])
     
     if resposta == 1:
+        entreLinhas("NOVO CADASTRO")
         cadastrar()
         sleep(2)
     elif resposta == 2:
+        entreLinhas("NOVO CADASTRO")
+        nome = str(input("Nome: "))
+        idade = int(input("Idade: "))
+        cadastrarArq(arq, nome, idade)
+        sleep(2)
+    elif resposta == 3:
         listar()
         sleep(2)
-        
-    elif resposta == 3:
+    elif resposta == 4:
         lerArquivo(arq)
         sleep(2)
-    elif resposta == 4:
+    elif resposta == 5:
         entreLinhas(f"Programa finalizado, volte sempre!")
         break
     else: 
