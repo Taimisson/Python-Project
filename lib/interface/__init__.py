@@ -33,13 +33,13 @@ def menu(lista):
         print(f"\033[33m{c}\033[m - \033[34m{item}\033[m")
         c += 1
     print(linha())
-    opc = leiaInt("\033[33mSua opção: \033[m")
+    opc = leiaInt("\033[32mSua opção: \033[m")
     return opc
 
 #  Função para listar as pessoas cadastradas  
 def listar():
     if len(listaPessoas) < 1:
-        entreLinhas("Não há pessoas cadastradas!")
+        entreLinhas("Não há pessoas cadastradas no sistema!")
     else:
         entreLinhas("PESSOAS CADASTRADAS")
         print("NOME".ljust(30) + "| IDADE")
