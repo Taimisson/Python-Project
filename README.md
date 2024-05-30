@@ -92,10 +92,3 @@ Esta função lê um arquivo e exibe o conteúdo na tela.
 ### `cadastrarArq(arq, nome="desconhecido", idade=0)`
 
 Esta função adiciona um novo registro ao arquivo.
-
----
-
-## Autor
-
-Taimisson de Carvalho Schardosim - [taimissoncontact@gmail.com](mailto:taimissoncontact@gmail.com)
-
